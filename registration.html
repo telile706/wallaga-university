@@ -1,0 +1,131 @@
+<div class="registration-section">
+  <h2>🎓 Register at Wallaga University</h2>
+  <p>Join our academic community by completing the form below.</p>
+
+  <!-- Registration Form -->
+  <form class="registration-form" action="#" method="post">
+    <div class="form-group">
+      <label for="name">👤 Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">📧 Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">📞 Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+251..." required />
+    </div>
+
+    <div class="form-group">
+      <label for="campus">🏫 Preferred Campus</label>
+      <select id="campus" name="campus" required>
+        <option value="">Choose a campus</option>
+        <option value="nekemte">Nekemte</option>
+        <option value="shambu">Shambu</option>
+        <option value="gimbi">Gimbi</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="program">📘 Program of Interest</label>
+      <input type="text" id="program" name="program" placeholder="e.g. Computer Science" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">📝 Additional Notes</label>
+      <textarea id="message" name="message" placeholder="Your message..." rows="4"></textarea>
+    </div>
+
+    <!-- ✅ Submit Button -->
+    <button type="submit" class="submit-btn">Submit Registration</button>
+  </form>
+
+  <!-- ✅ Thank You Message (Hidden Initially) -->
+  <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 30px; color: green;">
+    <h3>✅ Thank you for registering!</h3>
+    <p>We have received your information and will get back to you soon.</p>
+  </div>
+</div>
+
+<!-- ✅ JavaScript to Show Thank-You Message -->
+<script>
+  document.querySelector(".registration-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form behavior
+
+    const form = e.target;
+    form.style.display = "none"; // Hide the form
+    document.getElementById("thankYouMessage").style.display = "block"; // Show thank-you
+  });
+</script>
+<style>
+.registration-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #f0f8ff, #e6f2ff);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 64, 128, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.registration-section h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.registration-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.registration-form .form-group {
+  margin-bottom: 20px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #004080;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+  border-color: #0074d9;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #004080;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00264d;
+}

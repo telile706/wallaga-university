@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallaga University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    .header {
+      background-color: #004080;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #ffcc00;
+    }
+
+    .welcome {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .welcome h2 {
+      color: #004080;
+    }
+
+    .topnav {
+      background-color: #00264d;
+      overflow: hidden;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #ffcc00;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      background-color: #0059b3;
+      color: #fff;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .column {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 30%;
+      min-width: 280px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .column h2 {
+      color: #004080;
+    }
+
+    .column img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .column p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .map-section {
+      padding: 30px;
+      text-align: center;
+      background-color: #e0ecff;
+    }
+
+    .map-section h3 {
+      color: #004080;
+    }
+
+    .map-section iframe {
+      width: 80%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background-color: #00264d;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .go-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #004080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .go-link:hover {
+      background-color: #003366;
+    }
+/* Dark Mode Toggle Button */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+.dark-toggle:hover {
+  background-color: #00264d;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .header,
+.dark-mode .footer,
+.dark-mode .registration-section,
+.dark-mode .column,
+.dark-mode .welcome,
+.dark-mode .topnav,
+.dark-mode .map-section {
+  background-color: #262626 !important;
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .topnav a {
+  color: #ffcc00;
+}
+.dark-mode .topnav a:hover {
+  background-color: #333;
+}
+
+.dark-mode .registration-form input,
+.dark-mode .registration-form select,
+.dark-mode .registration-form textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Wallaga University</h1>
+    <p>Inspiring Innovation and Academic Excellence</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Nekemte</a>
+    <a href="#">Shambu</a>
+    <a href="#">Gimbi</a>
+  </div>
+
+  <div class="welcome">
+    <h2>Welcome to Wallaga University</h2>
+    <p>
+      Established to serve the academic and developmental needs of Ethiopia, Wallaga University is committed to providing quality education, conducting impactful research, and engaging in community service. With multiple campuses across Oromia, we aim to be a center of excellence in teaching and innovation.
+    </p>
+    <p>
+      <strong>Mission:</strong> To produce competent graduates through practical and quality education.<br>
+      <strong>Vision:</strong> To be one of the top research-oriented universities in East Africa by 2030.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src=https://th.bing.com/th/id/R.3d5cb5c806e01feffbccbd4fdf7c7686?rik=ZBE97vhTX9BNGQ&riu=http%3a%2f%2fwww.ethiovisit.com%2fdirectory%2fuploads%2fimages%2feducation%2funiversity%2f1041%2f1041-2015-09-21+13-24-15-Wollega-University.jpg&ehk=g7S2EmGVJ8ez1rL%2bH3fd2L0K8%2fYYo%2bgCryXjN9L7T4I%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Nekemte Campus" />
+      <h2>Nekemte Campus</h2>
+      <p>
+        Our main campus in Nekemte is the administrative and academic center of the university. It hosts advanced laboratories, modern lecture halls, a digital library, and a 24/7 health facility. Students here enjoy a peaceful and scenic environment conducive to learning and research.
+      </p>
+    </div>
+
+    <div class="column">
+      <img src="https://th.bing.com/th/id/OIP.jJcLFz2cQEvCpwU1i5EBnAHaE8?cb=iwc2&rs=1&pid=ImgDetMain" alt="Shambu Campus" />
+      <h2>Shambu Campus</h2>
+      <p>
+        Located in Horo Guduru Wollega, Shambu Campus specializes in agriculture and environmental sciences. With its favorable climate and agricultural potential, it provides hands-on learning for students in crop production, animal sciences, and sustainable development.
+      </p>
+    </div>
+
+    <div class="column">
+      <img src="https://semonegna.com/wp-content/uploads/2018/10/Wollega-University-Gimbi-Campus.jpg" alt="Gimbi Campus" />
+      <h2>Gimbi Campus</h2>
+      <p>
+        Gimbi Campus focuses on humanities, business, and natural sciences. It plays a key role in educating future leaders and professionals in the western region. The campus encourages community engagement and entrepreneurship through student-led initiatives.
+      </p>
+    </div>
+  </div>
+
+  <div class="map-section">
+    <h3>Find Us on the Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+    <br />
+    <a href="reg5.html" class="go-link">Visit Registration Page</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Wallaga University. All rights reserved.</p>
+    <p>Email: info@wallagauniversity.edu.et | Phone: +251-11-123-4567</p>
+  </div>
+    <button type="submit" class="submit-btn">Submit Registration</button>
+  </form>
+</div>
+
+<button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+
+<div class="registration-section">
+  <!-- Your form here... -->
+</div>
+<footer style="text-align: center; margin-top: 100px; color: BLACK;">
+  <p>Created by <strong>TELILE TESFAYE</strong> © 2025</p>
+</footer>
+
+
+</body>
+<script>
+  const toggleBtn = document.getElementById("darkModeToggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.textContent = 
+      document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+  });
+</script>
+
+</html>
+
+
+
